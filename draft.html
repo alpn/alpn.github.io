@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
-<body>
-<svg width="960" height="500"></svg>
-<script src="https://d3js.org/d3.v7.min.js"></script>
+    <head>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <style>
+
+        svg {
+            display: block;
+            margin: auto;
+        }
+    @media screen and (min-width : 600px) {
+
+        .default{
+            display:flex;
+        }
+
+        .mobile{
+            display : none;
+        }
+    }
+
+        </style>
+    </head>
+    <body>
+<svg width="420" height="500"></svg>
 <script>
 
 var svg = d3.select("svg"),
