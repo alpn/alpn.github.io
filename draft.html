@@ -4,25 +4,36 @@
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <style>
 
+        html, body {
+            height: 100%;  
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
         svg {
+            margin: 0 auto;
             display: block;
-            margin: auto;
         }
-    @media screen and (min-width : 600px) {
+        @media screen and (min-width : 600px) {
 
-        .default{
-            display:flex;
-        }
+            .default{
+                display:flex;
+            }
 
-        .mobile{
-            display : none;
+            .mobile{
+                display : none;
+            }
         }
-    }
 
         </style>
     </head>
     <body>
+        <div id="container">
 <svg width="420" height="500"></svg>
+        </div>
 <script>
 
 var svg = d3.select("svg"),
