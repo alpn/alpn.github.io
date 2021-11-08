@@ -1,11 +1,6 @@
-window.onload = function(){
-    a();
-}
+window.onload = a;
+document.addEventListener("DOMContentLoaded", a);
 
-// NOTE: safari
-document.addEventListener("DOMContentLoaded", function(event) {
-    a();
-});
 function a(){
 
     var svg = d3.select("svg"),
