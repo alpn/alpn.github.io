@@ -1,1 +1,40 @@
-<html></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="/a.js"></script>
+        <title>alpn</title>
+        <style>
+
+        html, body {
+            height: 100%;  
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        svg {
+            margin: 0 auto;
+            display: block;
+        }
+        @media screen and (min-width : 600px) {
+
+            .default{
+                display:flex;
+            }
+
+            .mobile{
+                display : none;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <svg width="420" height="500"></svg>
+        </div>
+    </body>
+<html>
